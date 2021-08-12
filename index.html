@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel</title>
+    <!-- Reset css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./assets/font/fontawesome-5.15.3/css/all.min.css" />
+    <!-- My style -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+  </head>
+  <body>
+    <div class="app">
+      <!-- Start header with search -->
+      <section class="header-with-search">
+        <!-- Start header -->
+        <header class="header">
+          <div class="header__logo">
+            <img src="./assets/images/logo.png" alt="" class="header__logo-img" />
+          </div>
+          <ul class="navbar-list">
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">HOME</a></li>
+            <li class="navbar-list__item">
+							<a href="" class="navbar-list__link">PACKAGES</a>
+							<!-- First subnav -->
+							<ul class="navbar-list__subnav">
+								<li class="navbar-list__subnav-item item-tag--active-red">
+									<a href="" class="navbar-list__subnav-link">
+										Search 1
+										<span class="item-tag"></span>
+									</a>
+								</li>
+								<li class="navbar-list__subnav-item">
+									<a href="" class="navbar-list__subnav-link">Search 2</a>
+								</li>
+								<li class="navbar-list__subnav-item">
+									<a href="" class="navbar-list__subnav-link">Tour Package</a>
+									<!-- Secondary subnav -->
+									<ul class="navbar-list__subnav">
+										<li class="navbar-list__subnav-item item-tag--active-red">
+											<a href="" class="navbar-list__subnav-link">
+												Carousel
+												<span class="item-tag"></span>
+											</a>
+										</li>
+										<li class="navbar-list__subnav-item">
+											<a href="" class="navbar-list__subnav-link">Custom Map</a>
+										</li>
+										<li class="navbar-list__subnav-item">
+											<a href="" class="navbar-list__subnav-link">360 Panorama</a>
+										</li>
+										<li class="navbar-list__subnav-item">
+											<a href="" class="navbar-list__subnav-link">Default</a>
+										</li>
+									</ul>
+								</li>
+								<li class="navbar-list__subnav-item">
+									<a href="" class="navbar-list__subnav-link">Destination</a>
+								</li>
+								<li class="navbar-list__subnav-item">
+									<a href="" class="navbar-list__subnav-link">Typology</a>
+								</li>
+							</ul>
+						</li>
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">SHOP</a></li>
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">ABOUT US</a></li>
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">PAGES</a></li>
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">NEWS</a></li>
+            <li class="navbar-list__item"><a href="" class="navbar-list__link">CONTACT</a></li>
+          </ul>
+          <div class="btn header__btn">Book now</div>
+          <div class="header__menu-btn">
+            <i class="header__menu-icon fas fa-bars"></i>
+          </div>
+        </header>
+        <!-- End header -->
+        <!-- Start search -->
+        <div class="search">
+          <h2 class="search__heading">Search your next <u>Holiday</u></h2>
+          <p class="search__text">CHECK OUR BEST PROMOTIONS</p>
+          <div class="search__input-wrap">
+            <select name="" id="" class="search-select">
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+              <option value="" class="search-select__option">value</option>
+            </select>
+            <div class="search__btn"><i class="search__btn-icon fas fa-search"></i></div>
+          </div>
+          <div class="search__subject-wrap">
+            <div class="search__subject-item">
+              <a href="" class="search__subject-link">
+                <img src="./assets/images/t-relax.png" alt="" class="search__subject-img" />
+                <h5 class="search__subject-text">RELAX</h5>
+              </a>
+            </div>
+            <div class="search__subject-item">
+              <a href="" class="search__subject-link">
+                <img src="./assets/images/t_cultural.png" alt="" class="search__subject-img" />
+                <h5 class="search__subject-text">CULTURAL</h5>
+              </a>
+            </div>
+            <div class="search__subject-item">
+              <a href="" class="search__subject-link">
+                <img src="./assets/images/t_sport.png" alt="" class="search__subject-img" />
+                <h5 class="search__subject-text">SPORT</h5>
+              </a>
+            </div>
+            <div class="search__subject-item">
+              <a href="" class="search__subject-link">
+                <img src="./assets/images/t-history.png" alt="" class="search__subject-img" />
+                <h5 class="search__subject-text">HISTORY</h5>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End search -->
+      </section>
+
+      <!-- Start destination -->
+      <section class="destination">
+        <div class="grid wide">
+          <h5 class="destination__heading">OUR PROPOSALS</h5>
+          <h3 class="destination__title">OUR <u>DESTINATIONS</u></h3>
+          <div class="row">
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+											<a href="" class="overlay__link">Berline</a>
+										</li>
+										<li class="overlay__item">
+											<a href="" class="overlay__link">Amsterdam</a>
+										</li>
+										<li class="overlay__item">
+											<a href="" class="overlay__link">Tuscany</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-9.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/arch.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Europe</h4>
+                  <p class="destination__info-text">3 packages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+											<a href="" class="overlay__link">Phuket</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-5.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/buddha.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Thailandia</h4>
+                  <p class="destination__info-text">1 packages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+											<a href="" class="overlay__link">Hong Kong</a>
+										</li>
+										<li class="overlay__item">
+											<a href="" class="overlay__link">Phuket</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-8.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/torii-gate.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Asia</h4>
+                  <p class="destination__info-text">2 packages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+										<li class="overlay__item">
+											<a href="" class="overlay__link">Tuscany</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-10.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/pisa.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Italy</h4>
+                  <p class="destination__info-text">1 packages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+                    <li class="overlay__item">
+											<a href="" class="overlay__link">Amsterdam</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-11.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/london-eye.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">Netherlands</h4>
+                  <p class="destination__info-text">1 packages</p>
+                </div>
+              </div>
+            </div>
+            <div class="col l-4">
+              <div class="destination__item">
+                <div class="destination__item-overlay">
+                  <h4 class="overlay__heading">Packages</h4>
+                  <ul class="overlay__list">
+										<li class="overlay__item">
+											<a href="" class="overlay__link">San Francisco</a>
+										</li>
+										<a href="" class="overlay__btn btn">View destination</a>
+                  </ul>
+                </div>
+                <img src="./assets/images/destination-1.jpg" alt="" class="destination__item-img" />
+                <img src="./assets/images/golden-gate.png" alt="" class="destination__item-icon" />
+                <div class="destination__info">
+                  <h4 class="destination__info-heading">United States</h4>
+                  <p class="destination__info-text">1 packages</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
