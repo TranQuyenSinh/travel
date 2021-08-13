@@ -76,7 +76,8 @@
   background: transparent;
 }
 .navbar-list__subnav-link {
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 190px;
   padding: 15px 25px;
   border-bottom: 1px solid #eee;
@@ -84,8 +85,7 @@
   text-decoration: none;
   font-size: 1.4rem;
   transition: all 0.2s ease;
-  display: flex;
-  justify-content: space-between;
+  letter-spacing: 2px;
 }
 .navbar-list__subnav-item:hover {
   background-color: #f9f9f9;
@@ -101,5 +101,99 @@
 .header__menu-icon {
   color: #acacae;
   font-size: 3rem;
+  cursor: pointer;
+}
+/* End subnav */
+/* Start aside */
+.aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  bottom: 0;
+  z-index: 5;
+  width: 350px;
+  padding: 30px;
+  border-left: 1px solid #cacaca;
+  background-color: var(--white-color);
+  overflow-y: auto;
+  transition: all 0.9s ease;
+}
+.aside__close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.aside__close-img {
+  width: 25px;
+}
+.aside__heading {
+  font-size: 1.4rem;
+}
+.aside__title {
+  font-size: 2.5rem;
+}
+.aside__title > u.underline::after {
+  bottom: 10px;
+  background-color: #ffd105;
+}
+.aside__content-wrap {
+  margin-top: 10px;
+}
+.aside__item {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+.aside__item-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.aside__item-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+}
+.aside__item-heading {
+  color: var(--text-dark-color);
+  font-size: 2rem;
+  line-height: 2rem;
+  text-decoration: none;
+}
+.aside__item-text {
+  margin-top: 10px;
+  color: var(--text-light-color);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+.aside__item-btn {
+  padding: 6px 15px;
+  margin-top: 20px;
+}
+.aside__item-btn:hover {
+  filter: brightness(1.1);
+}
+.aside__item-btn--red {
+  background-image: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+.aside__item-btn--yellow {
+  background-image: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+.aside__item-btn--purple {
+  background-image: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
+.aside__destination-wrap {
+  margin: 30px 0;
+}
+.aside__destination-wrap .aside__destination-item {
+  margin: 30px 0 0 0;
+}
+/* Checkbox to toggle aside */
+#switch-aside-checkbox:checked ~ .aside {
+  right: 0%;
 }
 /* End header */
