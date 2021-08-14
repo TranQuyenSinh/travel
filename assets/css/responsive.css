@@ -1,0 +1,207 @@
+/* PC */
+@media only screen and (min-width: 64em) {
+  .hide-on-pc {
+    display: none;
+  }
+}
+/* Mobile and Tablet */
+@media only screen and (max-width: 63.9375em) {
+  .hide-on-mobile-tablet {
+    display: none;
+  }
+  .header {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--text-dark-color);
+  }
+  .header__logo {
+    margin: 0;
+  }
+  .header__menu-btn {
+    margin: 8px 0 0;
+  }
+  /* Start aside */
+  .aside {
+    width: 300px;
+    border-color: #797979;
+    padding: 40px;
+    background-color: var(--text-dark-color);
+  }
+  .aside__close-btn {
+    top: 30px;
+    right: 30px;
+  }
+  .aside__close-img {
+    width: 42px;
+  }
+  /* Search */
+  .search {
+    padding-top: 390px;
+  }
+  .search__input-wrap {
+    width: 90%;
+  }
+  .search__subject-wrap {
+    flex-direction: column;
+    width: 85%;
+  }
+  .search__subject-item {
+    width: 100%;
+    margin: 12px 0;
+  }
+  /* Best */
+  .best__with-img {
+    margin-top: 50px;
+  }
+  /* Tour */
+  .tour-item__info-desc {
+    margin: 12px 0;
+  }
+  .tour-item {
+    margin-bottom: 30px;
+  }
+  /* Card */
+  .card-item {
+    margin-bottom: 40px;
+  }
+  /* Footer */
+  .footer__with-input {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+  }
+  .footer__input {
+    flex: 1;
+  }
+  .footer__btn {
+    padding: 15px 45px;
+  }
+  .footer-list__wrap {
+    margin-top: 36px;
+  }
+  .footer__copyright {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+  .footer__copyright-item {
+    line-height: 4rem;
+  }
+}
+/* Tablet */
+@media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
+  .destination__item {
+    --margin: calc((100vw - 644px) / 4);
+    margin: var(--margin) 0;
+  }
+  .banner__btn {
+    min-width: 250px;
+  }
+  .best__countdown {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    transform: translateY(100%);
+  }
+  .tour {
+    margin-top: 160px;
+  }
+}
+/* Mobile */
+@media only screen and (max-width: 46.1875em) {
+  /* Search */
+  .search__heading {
+    line-height: 7rem;
+    padding: 0 40px;
+  }
+  .search__text {
+    padding: 0 80px;
+    text-align: center;
+    line-height: 2.8rem;
+  }
+  /* Start destination */
+  .destination__item {
+    padding: 0 24px;
+  }
+  .destination__item-overlay {
+    margin: 0 24px;
+  }
+  .destination__info {
+    left: 50px;
+    bottom: 30px;
+  }
+  .destination__item-icon {
+    left: 50px;
+  }
+  /* Banner */
+  .banner {
+    height: 390px;
+  }
+  .banner__heading {
+    margin-right: 0; 
+  }
+  .banner__content {
+    flex-direction: column;
+  }
+  .banner__btn {
+    padding: 15px 36px;
+    margin: 40px 0 0;
+  }
+  /* Best */
+  .best {
+    padding: 0 24px;
+  }
+  .best__info-btn {
+    width: 100%;
+  }
+  .best__with-img {
+    height: 200px;
+  }
+  .best__countdown {
+    flex-direction: column;
+    left: 0;
+    bottom: 0;
+    transform: translateY(100%);
+    width: 100%;
+  }
+  .best__countdown-item {
+    width: 100%;
+  }
+  /* Tour */
+  .tour {
+    margin-top: 520px;
+    padding: 0 24px;
+    margin-bottom: 20px;
+  }
+  /* Discover */
+  .discover {
+    margin-bottom: 80px;
+  }
+  /* Card */
+  .card-item-info__btn {
+    width: 100%;
+  }
+  /* Footer */
+  .footer {
+    padding-bottom: 0;
+  }
+  .footer__with-heading {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .footer__with-input {
+    flex-direction: column;
+  }
+  .footer__input {
+    width: 70%;
+  }
+  .footer__btn {
+    margin: 12px auto 0;
+    width: 70%;
+  }
+  .footer-info {
+    padding-right: 0;
+  }
+}

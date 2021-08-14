@@ -5,7 +5,14 @@
   --white-color: #fff;
   --text-light-color: #a9a9a9;
   --text-dark-color: #555;
-  --primary-color: #14d9d5;
+
+  --red-color: #f76570;
+  --orange-color: #f3a46b;
+  --yellow-color: #ffd205;
+  --green-color: #1bbc9b;
+  --blue-color: #14b9d5;
+  --purple-color: #ba71da;
+  
 }
 * {
   box-sizing: inherit;
@@ -20,7 +27,7 @@ html {
 }
 .btn {
   display: inline-block;
-  min-width: 100px;
+  min-width: 90px;
   outline: none;
   border: none;
   border-radius: 30px;
@@ -35,37 +42,43 @@ html {
   transition: 0.2s;
 }
 .btn--red {
-  color: #f76570;
-}
-.btn--yellow {
-  color: #ffd205;
+  color: var(--red-color);
 }
 .btn--orange {
-  color: #f3a46b;
+  color: var(--orange-color);
 }
-.btn--purple {
-  color: #ba71da;
+.btn--yellow {
+  color: var(--yellow-color);
 }
 .btn--green {
-  color: #1bbc9b;
+  color: var(--green-color);
 }
-.btn--red {
-  color: #f76570;
+.btn--blue {
+  background-color: var(--blue-color);
+}
+.btn--purple {
+  color: var(--purple-color);
 }
 
-.btn--bg-yellow {
-  background-color: #ffd205;
+.btn--bg-red {
+  background-color: var(--red-color);
 }
 .btn--bg-orange {
-  background-color: #f3a46b;
+  background-color: var(--orange-color);
 }
-.btn--bg-purple {
-  background-color: #ba71da;
+.btn--bg-yellow {
+  background-color: var(--yellow-color);
 }
 .btn--bg-green {
-  background-color: #1bbc9b;
+  background-color: var(--green-color);
 }
- /* Section */
+.btn--bg-blue {
+  background-color: var(--blue-color);
+}
+.btn--bg-purple {
+  background-color: var(--purple-color);
+}
+/* Section */
 .section__heading {
   font-size: 1.4rem;
   line-height: 1.4rem;
@@ -83,6 +96,25 @@ u.underline {
   text-decoration: none;
   position: relative;
 }
+u.underline.underline--red::after {
+  background-color: var(--red-color);
+}
+u.underline.underline--orange::after {
+  background-color: var(--orange-color);
+}
+u.underline.underline--yellow::after {
+  background-color: var(--yellow-color);
+}
+u.underline.underline--green::after {
+  background-color: var(--green-color);
+}
+u.underline.underline--blue::after {
+  background-color: var(--blue-color);
+}
+u.underline.underline--purple::after {
+  background-color: var(--purple-color);
+}
+
 u.underline::after {
   content: "";
   position: absolute;
@@ -91,18 +123,20 @@ u.underline::after {
   z-index: -1;
   width: 100%;
   height: 5px;
-} /* End section */ /* dùng tag phải thêm thẻ <span class="item-tag"></span> vào HTML */
+} /* End section */
+
+/* dùng tag phải thêm thẻ <span class="item-tag"></span> vào HTML */
 .item-tag--active-red .item-tag::before {
   content: "hot";
-  background-color: #f76570;
+  background-color: var(--red-color);
 }
 .item-tag--active-blue .item-tag::before {
   content: "best";
-  background-color: #14b9d5;
+  background-color: var(--blue-color);
 }
 .item-tag--active-green .item-tag::before {
   content: "new";
-  background-color: #1bbc9b;
+  background-color: var(--green-color);
 }
 .item-tag {
   position: relative;
@@ -112,6 +146,7 @@ u.underline::after {
   position: absolute;
   right: 0;
   top: 50%;
+  transform: translateY(-50%);
   display: block;
   width: 25px;
   height: var(--height);
@@ -122,7 +157,6 @@ u.underline::after {
   text-align: center;
   line-height: var(--height);
   text-transform: uppercase;
-  transform: translateY(-50%);
 }
 .item-has-children::before {
   content: "";
@@ -143,14 +177,23 @@ u.underline::after {
   text-align: center;
   letter-spacing: 6px;
 }
+.card-tag--red {
+  background-color: var(--red-color);
+}
 .card-tag--yellow {
-  background-color: #ffd205;
+  background-color: var(--yellow-color);
 }
 .card-tag--orange {
-  background-color: #f3a46b;
+  background-color: var(--orange-color);
 }
 .card-tag--green {
-  background-color: #1bbc9b;
+  background-color: var(--green-color);
+}
+.card-tag--blue {
+  background-color: var(--blue-color);
+}
+.card-tag--purple {
+  background-color: var(--purple-color);
 }
 .app {
   overflow: hidden;

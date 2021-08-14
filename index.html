@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
     <link rel="stylesheet" href="./assets/css/home.css" />
     <link rel="stylesheet" href="./assets/css/responsive.css" />
   </head>
@@ -25,7 +26,7 @@
           <div class="header__logo">
             <img src="./assets/images/logo.png" alt="" class="header__logo-img" />
           </div>
-          <ul class="navbar-list">
+          <ul class="navbar-list hide-on-mobile-tablet">
             <li class="navbar-list__item"><a href="" class="navbar-list__link">HOME</a></li>
             <li class="navbar-list__item">
               <a href="" class="navbar-list__link">PACKAGES</a>
@@ -174,23 +175,25 @@
             </li>
           </ul>
           <!-- Book btn -->
-          <div class="btn header__btn">Book now</div>
+          <div class="btn btn--bg-purple header__btn hide-on-mobile-tablet">Book now</div>
           <!-- Menu icon -->
           <label for="switch-aside-checkbox" class="header__menu-btn">
             <i class="header__menu-icon fas fa-bars"></i>
           </label>
           <input hidden type="checkbox" name="" id="switch-aside-checkbox" />
           <!-- Aside -->
+          <label for="switch-aside-checkbox" class="aside-overlay"></label>
           <aside class="aside">
             <!-- Close aside button -->
             <label for="switch-aside-checkbox" class="aside__close-btn"
               ><img src="./assets/images/error.png" alt="" class="aside__close-img"
             /></label>
+            <!-- =============== JUST SHOW ON PC =============== -->
             <!-- Aside heading -->
-            <h5 class="aside__heading section__heading">BEST</h5>
-            <h3 class="aside__title section__title"><u class="underline">PACKAGES</u></h3>
+            <h5 class="aside__heading section__heading hide-on-mobile-tablet">BEST</h5>
+            <h3 class="aside__title section__title hide-on-mobile-tablet"><u class="underline underline--yellow">PACKAGES</u></h3>
             <!-- Start aside content -->
-            <div class="aside__content-wrap">
+            <div class="aside__content-wrap hide-on-mobile-tablet">
               <div class="aside__item">
                 <img src="./assets/images/berlin.jpg" alt="" class="aside__item-img" />
                 <div class="aside__item-info">
@@ -227,7 +230,7 @@
             </div>
             <!-- End aside content -->
             <!-- Start aside destination -->
-            <div class="aside__destination-wrap">
+            <div class="aside__destination-wrap hide-on-mobile-tablet">
               <div class="aside__destination-item destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -244,14 +247,17 @@
                     <a href="" class="overlay__btn btn">View destination</a>
                   </ul>
                 </div>
-                <img src="./assets/images/destination-9.jpg" alt="" class="destination__item-img" />
+                <div
+                  class="destination__item-img"
+                  style="background-image: url(./assets/images/destination-9.jpg)"
+                ></div>
                 <img src="./assets/images/arch.png" alt="" class="destination__item-icon" />
                 <div class="destination__info">
                   <h4 class="destination__info-heading">Europe</h4>
                   <p class="destination__info-text">3 packages</p>
                 </div>
               </div>
-              <div class="destination__item">
+              <div class="aside__destination-item destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
                   <ul class="overlay__list">
@@ -261,7 +267,10 @@
                     <a href="" class="overlay__btn btn">View destination</a>
                   </ul>
                 </div>
-                <img src="./assets/images/destination-5.jpg" alt="" class="destination__item-img" />
+                <div
+                  class="destination__item-img"
+                  style="background-image: url(./assets/images/destination-5.jpg)"
+                ></div>
                 <img src="./assets/images/buddha.png" alt="" class="destination__item-icon" />
                 <div class="destination__info">
                   <h4 class="destination__info-heading">Thailandia</h4>
@@ -270,10 +279,10 @@
               </div>
             </div>
             <!-- Aside heading -->
-            <h5 class="aside__heading section__heading">LAST</h5>
-            <h3 class="aside__title section__title"><u class="underline">MINUTES</u></h3>
+            <h5 class="aside__heading section__heading hide-on-mobile-tablet">LAST</h5>
+            <h3 class="aside__title section__title hide-on-mobile-tablet"><u class="underline underline--orange">MINUTES</u></h3>
             <!-- Start aside content -->
-            <div class="aside__content-wrap">
+            <div class="aside__content-wrap hide-on-mobile-tablet">
               <div class="aside__item">
                 <img src="./assets/images/package-5-150x150.jpg" alt="" class="aside__item-img" />
                 <div class="aside__item-info">
@@ -308,12 +317,104 @@
                 </div>
               </div>
             </div>
+            <!-- =============== JUST SHOW ON MOBILE AND TABLET =============== -->
+            <ul class="aside__navbar hide-on-pc">
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">HOME</a>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">PACKAGES</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SEARCH 1</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SEARCH 2</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">TOUR PACKAGE</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CAROUSEL</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CUSTOM MAP</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">36O PANORAMA</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">DEFAULT</a></li>
+                    </ul>
+                  </li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">DESTINATION</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">TYPOLOGY</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">SHOP</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ARCHIVE</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SINGLE PRODUCT</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CART</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CHECK OUT</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">ABOUT US</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 2</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 3</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">PAGES</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">SERVICES</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">AGENCY TOURS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">TESTIMONIALS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">PRICES</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">PROMOTIONS</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">FAQ</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">COMING SOON</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">ABOUT US</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 1</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 2</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ABOUT US 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">CONTACT</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 1</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 2</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">NEWS</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">ARCHIVE</a></li>
+                  <li class="aside__subnav-item">
+                    <a href="" class="aside__subnav-link">SINGLE POST</a>
+                    <ul class="aside__subnav">
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">FULL WIDTH</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">RIGHT SIDEBAR</a></li>
+                      <li class="aside__subnav-item"><a href="" class="aside__subnav-link">LEFT SIDEBAR</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">CONTACT</a>
+                <ul class="aside__subnav">
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 1</a></li>
+                  <li class="aside__subnav-item"><a href="" class="aside__subnav-link">CONTACT 2</a></li>
+                </ul>
+              </li>
+              <li class="aside__navbar-item">
+                <a href="" class="aside__navbar-link">BOOK NOW</a>
+              </li>
+            </ul>
           </aside>
         </header>
         <!-- End header -->
         <!-- Start search -->
         <div class="search">
-          <h2 class="search__heading">Search your next <u class="underline">Holiday</u></h2>
+          <h2 class="search__heading">Search your next <u class="underline underline--purple">Holiday</u></h2>
           <p class="search__text">CHECK OUR BEST PROMOTIONS</p>
           <div class="search__input-wrap">
             <select name="" id="" class="search-select">
@@ -363,9 +464,9 @@
       <section class="destination">
         <div class="grid wide">
           <h5 class="destination__heading section__heading">OUR PROPOSALS</h5>
-          <h3 class="destination__title section__title">OUR <u class="underline">DESTINATIONS</u></h3>
+          <h3 class="destination__title section__title">OUR <u class="underline underline--green">DESTINATIONS</u></h3>
           <div class="row">
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -393,7 +494,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -415,7 +516,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -440,7 +541,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -462,7 +563,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -484,7 +585,7 @@
                 </div>
               </div>
             </div>
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="destination__item">
                 <div class="destination__item-overlay">
                   <h4 class="overlay__heading">Packages</h4>
@@ -517,7 +618,7 @@
         <div class="banner__content">
           <h2 class="banner__heading">
             <span class="banner__heading--small">Your</span><br />
-            <span class="banner__heading--big">Next <u class="underline">Holiday</u></span>
+            <span class="banner__heading--big">Next <u class="underline underline--red">Holiday</u></span>
           </h2>
           <div class="banner__btn btn btn--red">View all packages</div>
         </div>
@@ -528,10 +629,12 @@
       <section class="best">
         <div class="grid wide">
           <div class="row">
-            <div class="col l-4">
+            <div class="col l-4 m-12 c-12">
               <div class="best__info">
                 <h5 class="section__heading best__info-heading">NORTH AMERICA</h5>
-                <h3 class="section__title best__info-title">The Best <u class="underline">Beachs</u></h3>
+                <h3 class="section__title best__info-title">
+                  The Best <u class="underline underline--blue">Beachs</u>
+                </h3>
                 <p class="best__info-desc">
                   Lorem ipsum dolor sit amet, consectetur adip iscing elit. Proin rhoncus urna dictum neque molestie
                   ultricies mauris ac.
@@ -545,10 +648,10 @@
                   <span class="best__info-prices-new">500 $</span>
                   <span class="best__info-prices-desc"> / FOR PERSON</span>
                 </div>
-                <div class="best__info-btn btn">Book now</div>
+                <div class="best__info-btn btn btn--bg-green">Book now</div>
               </div>
             </div>
-            <div class="col l-8">
+            <div class="col l-8 m-12 c-12">
               <div class="best__with-img">
                 <img src="./assets/images/package-3.jpg" alt="" class="best__img best__img--active" />
                 <img src="./assets/images/parallax-4.jpg" alt="" class="best__img" />
@@ -589,30 +692,36 @@
           <div class="row">
             <div class="col l-4">
               <div class="tour-item">
-                <img src="./assets/images/icon-around.png" alt="" class="tour-item__img">
+                <img src="./assets/images/icon-around.png" alt="" class="tour-item__img" />
                 <div class="tour-item__info">
                   <h5 class="tour-item__info-heading">World Tour</h5>
-                  <p class="tour-item__info-desc">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                  <p class="tour-item__info-desc">
+                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                  </p>
                   <a href="" class="tour-item__info-more">View More</a>
                 </div>
               </div>
             </div>
             <div class="col l-4">
               <div class="tour-item">
-                <img src="./assets/images/icon-boat.png" alt="" class="tour-item__img">
+                <img src="./assets/images/icon-boat.png" alt="" class="tour-item__img" />
                 <div class="tour-item__info">
                   <h5 class="tour-item__info-heading">Cruises</h5>
-                  <p class="tour-item__info-desc">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                  <p class="tour-item__info-desc">
+                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                  </p>
                   <a href="" class="tour-item__info-more">View More</a>
                 </div>
               </div>
             </div>
             <div class="col l-4">
               <div class="tour-item">
-                <img src="./assets/images/icon-landmark.png" alt="" class="tour-item__img">
+                <img src="./assets/images/icon-landmark.png" alt="" class="tour-item__img" />
                 <div class="tour-item__info">
                   <h5 class="tour-item__info-heading">Best Tours</h5>
-                  <p class="tour-item__info-desc">Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.</p>
+                  <p class="tour-item__info-desc">
+                    Lorem ipsum dolor sit amet conse ctetur adip iscing elit Proin rhonc us urna dictum.
+                  </p>
                   <a href="" class="tour-item__info-more">View More</a>
                 </div>
               </div>
@@ -626,15 +735,15 @@
       <section class="discover">
         <div class="grid">
           <div class="row no-gutters">
-            <div class="col l-6">
-              <div class="discover-item" style="background-image: url(./assets/images/parallax-5-filter.jpg);">
+            <div class="col l-6 m-12 c-12">
+              <div class="discover-item" style="background-image: url(./assets/images/parallax-5-filter.jpg)">
                 <h5 class="discover-item__heading section__heading">01. LAST MINUTE</h5>
                 <h3 class="discover-item__title section__title">Discover Cities</h3>
                 <div class="btn btn--orange discover-item__btn">Details</div>
               </div>
             </div>
-            <div class="col l-6">
-              <div class="discover-item" style="background-image: url(./assets/images/parallax-6-filter.jpg);">
+            <div class="col l-6 m-12 c-12">
+              <div class="discover-item" style="background-image: url(./assets/images/parallax-6-filter.jpg)">
                 <h5 class="discover-item__heading section__heading">02. PROMOTIONS</h5>
                 <h3 class="discover-item__title section__title">Discover Nature</h3>
                 <div class="btn btn--green discover-item__btn">Details</div>
@@ -649,71 +758,97 @@
       <section class="card">
         <div class="grid wide">
           <h5 class="section__heading card__heading">PROMOTIONS</h5>
-          <h3 class="section__title card__title">OUR <u class="underline">PACKAGES</u></h3>
+          <h3 class="section__title card__title">OUR <u class="underline underline--green">PACKAGES</u></h3>
           <div class="row">
             <div class="col l-4">
               <div class="card-item">
-                <div class="card-item__img" style="background-image: url(./assets/images/hongkong.jpg);"></div>
+                <div class="card-item__with-img">
+                  <div class="card-item__img" style="background-image: url(./assets/images/berlin.jpg)"></div>
+                  <a href="" class="card-item__icon-wrap card-item__icon-wrap--yellow">
+                    <img src="./assets/images/arch.png" alt="" class="card-item__icon" />
+                  </a>
+                </div>
                 <div class="card-item-info">
-                  <a href="" class="card-item-info__heading">Berlin</a><br>
+                  <a href="" class="card-item-info__heading">Berlin</a><br />
                   <a href="" class="card-item-info__location">
                     <i class="card-item-info__icon fas fa-map-marker-alt"></i>
                     Europe
                   </a>
                   <div class="card-item-info__with-prices">
                     <div class="card-item-info__subject-wrap">
-                      <a href="" class="card-item-info__link">Cultural</a><br>
+                      <a href="" class="card-item-info__link">Cultural</a><br />
                       <a href="" class="card-item-info__link">Relax</a>
                       <span class="card-tag card-tag--yellow">+1</span>
                     </div>
                     <h2 class="card-item-info__prices">700 $</h2>
                   </div>
-                  <p class="card-item-info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
+                  <p class="card-item-info__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus
+                    dictum scelerisque.
+                  </p>
                   <div class="card-item-info__btn btn btn--bg-yellow">DETAILS</div>
                 </div>
               </div>
             </div>
             <div class="col l-4">
               <div class="card-item">
-                <div class="card-item__img" style="background-image: url(./assets/images/hongkong.jpg);"></div>
+                <div class="card-item__with-img">
+                  <div class="card-item__img" style="background-image: url(./assets/images/hongkong.jpg)"></div>
+                  <span class="card-item__sale">Sale</span>
+                  <a href="" class="card-item__icon-wrap card-item__icon-wrap--red">
+                    <img src="./assets/images/torii-gate.png" alt="" class="card-item__icon" />
+                  </a>
+                </div>
                 <div class="card-item-info">
-                  <a href="" class="card-item-info__heading">Berlin</a><br>
+                  <a href="" class="card-item-info__heading">Hong Kong</a><br />
                   <a href="" class="card-item-info__location">
                     <i class="card-item-info__icon fas fa-map-marker-alt"></i>
-                    Europe
+                    Asia
                   </a>
                   <div class="card-item-info__with-prices">
                     <div class="card-item-info__subject-wrap">
-                      <a href="" class="card-item-info__link">Cultural</a><br>
-                      <a href="" class="card-item-info__link">Relax</a>
-                      <span class="card-tag card-tag--orange">+1</span>
+                      <a href="" class="card-item-info__link">History</a><br />
+                      <a href="" class="card-item-info__link">Cultural</a>
+                      <span class="card-tag card-tag--red">+1</span>
                     </div>
+                    <h3 class="card-item__info-old-prices">1000</h3>
                     <h2 class="card-item-info__prices">700 $</h2>
                   </div>
-                  <p class="card-item-info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                  <div class="card-item-info__btn btn btn--bg-orange">DETAILS</div>
+                  <p class="card-item-info__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus
+                    dictum scelerisque.
+                  </p>
+                  <div class="card-item-info__btn btn btn--bg-red">DETAILS</div>
                 </div>
               </div>
             </div>
             <div class="col l-4">
               <div class="card-item">
-                <div class="card-item__img" style="background-image: url(./assets/images/hongkong.jpg);"></div>
+                <div class="card-item__with-img">
+                  <div class="card-item__img" style="background-image: url(./assets/images/sanfran.jpg)"></div>
+                  <a href="" class="card-item__icon-wrap card-item__icon-wrap--purple">
+                    <img src="./assets/images/golden-gate.png" alt="" class="card-item__icon" />
+                  </a>
+                </div>
                 <div class="card-item-info">
-                  <a href="" class="card-item-info__heading">Berlin</a><br>
+                  <a href="" class="card-item-info__heading">San Francisco</a><br />
                   <a href="" class="card-item-info__location">
                     <i class="card-item-info__icon fas fa-map-marker-alt"></i>
-                    Europe
+                    United States
                   </a>
                   <div class="card-item-info__with-prices">
                     <div class="card-item-info__subject-wrap">
-                      <a href="" class="card-item-info__link">Cultural</a><br>
+                      <a href="" class="card-item-info__link">Sport</a><br />
                       <a href="" class="card-item-info__link">Relax</a>
-                      <span class="card-tag card-tag--green">+1</span>
+                      <span class="card-tag card-tag--purple">+1</span>
                     </div>
-                    <h2 class="card-item-info__prices">700 $</h2>
+                    <h2 class="card-item-info__prices">400 $</h2>
                   </div>
-                  <p class="card-item-info__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus dictum scelerisque.</p>
-                  <div class="card-item-info__btn btn btn--bg-green">DETAILS</div>
+                  <p class="card-item-info__desc">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ut efficitur ante. Donec dapibus
+                    dictum scelerisque.
+                  </p>
+                  <div class="card-item-info__btn btn btn--bg-purple">DETAILS</div>
                 </div>
               </div>
             </div>
@@ -721,6 +856,96 @@
         </div>
       </section>
       <!-- End cards -->
+
+      <!-- Start footer -->
+      <footer class="footer">
+        <div class="grid wide">
+          <div class="row align-items-center">
+            <div class="col l-4 l-o-2 m-12 c-12">
+              <div class="footer__with-heading">
+                <h3 class="section__heading footer__heading">KEEP IN TOUCH</h3>
+                <h5 class="section__title footer__title">Travel with Us</h5>
+              </div>
+            </div>
+            <div class="col l-4 m-12 c-12">
+              <div class="footer__with-input">
+                <input type="text" name="" id="" class="footer__input" />
+                <div class="btn btn--bg-blue footer__btn">SEND</div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <div class="row">
+              <!-- Logo and text -->
+              <div class="col l-6 m-12 c-12">
+                <div class="footer-info">
+                  <a href="" class="footer-info__logo-link"><img src="./assets/images/footer_logo.png" alt="" class="footer-info__logo" /></a>
+                  <p class="footer-info__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut diam et nibh
+                    <a href="">condimentum</a> venenatis eu ac magnasin. Quisque interdum est mauris, eget ullamcorper.
+                  </p>
+                  <div class="footer-info__social-wrap">
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-twitter"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-youtube"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fab fa-facebook-square"></i>
+                    </a>
+                    <a href="" class="footer-info__link">
+                      <i class="footer-info__icon fab fa-vimeo-v"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- List -->
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">OUR AGENCY</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link"> Services</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Insurancee</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Agency</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Tourism</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Payment</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">PARTNERS</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Booking </a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">RentalCar</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">HostelWorld</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Trivago</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">TripAdvisor</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col l-2 m-4 c-12">
+                <div class="footer-list__wrap">
+                  <h4 class="footer-list__heading">LAST MINUTE</h4>
+                  <ul class="footer-list">
+                    <li class="footer-list__item"><a href="" class="footer-list__link">London</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">California</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Indonesia</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Europe</a></li>
+                    <li class="footer-list__item"><a href="" class="footer-list__link">Oceania</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="footer__copyright">
+            <p class="footer__copyright-item">THE BEST WORDPRESS TRAVEL THEME</p>
+            <p class="footer__copyright-item">COPYRIGHT NICDARK THEMES 2018</p>
+          </div>
+        </div>
+      </footer>
+      <!-- End footer -->
     </div>
     <script>
       var btns = document.querySelectorAll(".best__slider-dot-item");
@@ -733,13 +958,6 @@
         btns[index].classList.add("best__slider-dot-item--active");
         imgs[index].classList.add("best__img--active");
       }
-      let i = 0;
-      var interval = setInterval(function () {
-        if(i >= btns.length)
-          i = 0;
-        changeSlide(i);
-        i++;
-      }, 5000);
     </script>
   </body>
 </html>

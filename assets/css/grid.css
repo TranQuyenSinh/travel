@@ -21,6 +21,10 @@
 	margin-right: 0;
 }
 
+.row.align-items-center {
+	align-items: center;
+}
+
 .col {
 	padding-left: 4px;
 	padding-right: 4px;
