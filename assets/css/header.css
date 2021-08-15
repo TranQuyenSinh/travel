@@ -1,10 +1,20 @@
 /* Style for PC */
-.header-with-search {
+.header-wrap {
   position: relative;
-  background: url(../images/parallax-2.jpg) no-repeat center bottom / cover;
-  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
   min-height: 800px;
-} /* Start header */
+} 
+.header-title {
+  position: absolute;
+  left: 12%;
+  bottom: 10%;
+  color: var(--white-color);
+  font-size: 3.5rem;
+  text-shadow: 1px 1px #424242;
+}
+/* Start header */
 .header {
   position: absolute;
   top: 0;

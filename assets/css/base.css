@@ -54,10 +54,13 @@ html {
   color: var(--green-color);
 }
 .btn--blue {
-  background-color: var(--blue-color);
+  color: var(--blue-color);
 }
 .btn--purple {
   color: var(--purple-color);
+}
+.btn--white {
+  color: var(--white-color);
 }
 
 .btn--bg-red {
@@ -77,6 +80,56 @@ html {
 }
 .btn--bg-purple {
   background-color: var(--purple-color);
+}
+.btn--bg-white {
+  background-color: var(--white-color);
+}
+
+/* Background and color */
+.bg--red {
+  background-color: var(--red-color);
+}
+.bg--orange {
+  background-color: var(--orange-color);
+}
+.bg--yellow {
+  background-color: var(--yellow-color);
+}
+.bg--green {
+  background-color: var(--green-color);
+}
+.bg--blue {
+  background-color: var(--blue-color);
+}
+.bg--purple {
+  background-color: var(--purple-color);
+}
+.bg--white {
+  background-color: var(--white-color);
+}
+.text--light-color {
+  color: var(--text-light-color);
+}
+.text--dark-color {
+  color: var(--text-dark-color);
+}
+.text--white-color {
+  color: var(--white-color);
+}
+/* Margin & Padding */
+.mb-24 {
+  margin-bottom: 24px !important;
+}
+.mt-12 {
+  margin-top: 12px !important;
+}
+/* Border */
+.border {
+  border: 1px solid #f1f1f1;
+}
+/* Position */
+.is--relative {
+  position: relative;
 }
 /* Section */
 .section__heading {

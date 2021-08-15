@@ -3,6 +3,9 @@
   .hide-on-pc {
     display: none;
   }
+  .footer__input:focus {
+    width: 300px;
+  }
 }
 /* Mobile and Tablet */
 @media only screen and (max-width: 63.9375em) {
@@ -24,8 +27,8 @@
   /* Start aside */
   .aside {
     width: 300px;
-    border-color: #797979;
     padding: 40px;
+    border-color: #797979;
     background-color: var(--text-dark-color);
   }
   .aside__close-btn {
@@ -61,15 +64,19 @@
   .tour-item {
     margin-bottom: 30px;
   }
+  /* Destination */
+  .destination-item {
+    margin-top: 30px;
+  }
   /* Card */
   .card-item {
     margin-bottom: 40px;
   }
   /* Footer */
   .footer__with-input {
-    margin-top: 60px;
     display: flex;
     align-items: center;
+    margin-top: 60px;
   }
   .footer__input {
     flex: 1;
@@ -89,6 +96,38 @@
   .footer__copyright-item {
     line-height: 4rem;
   }
+  /* Map */
+  .map {
+    margin-top: 40px;
+  }
+  /* Hero */
+  .hero {
+    padding: 50px 24px;
+  }
+  .hero__heading {
+    text-align: center;
+    margin: 0 0 20px;
+    font-size: 3rem;
+  }
+  .hero__text {
+    text-align: justify;
+    margin-top: 0;
+  }
+  .staff-person {
+    margin-bottom: 24px;
+  }
+  .staff-person__btn {
+    width: 75%;
+    padding: 14px 10px;
+    display: inline-block;
+  }
+  /* TOTAL */
+  .total {
+    padding: 50px 0;
+  }
+  .total-item {
+    padding: 50px 0;
+  }
 }
 /* Tablet */
 @media only screen and (max-width: 63.9375em) and (min-width: 46.25em) {
@@ -100,26 +139,38 @@
     min-width: 250px;
   }
   .best__countdown {
-    width: 100%;
+    transform: translateY(100%);
     bottom: 0;
     left: 0;
-    transform: translateY(100%);
+    width: 100%;
   }
   .tour {
     margin-top: 160px;
+  }
+  /* Form */
+  .form__btn {
+    margin-left: auto;
+  }
+  /* Staff */
+  .staff {
+    /* doc = 100vw - 48*2*1.4*4 */
+    --width: calc(100vw - 48*2px);
+    --height: calc(var(--width)*1.1);
+    --total-height: calc(var(--height)*4);
+    margin-bottom: var(--total-height);
   }
 }
 /* Mobile */
 @media only screen and (max-width: 46.1875em) {
   /* Search */
   .search__heading {
-    line-height: 7rem;
     padding: 0 40px;
+    line-height: 7rem;
   }
   .search__text {
     padding: 0 80px;
-    text-align: center;
     line-height: 2.8rem;
+    text-align: center;
   }
   /* Start destination */
   .destination__item {
@@ -140,13 +191,14 @@
     height: 390px;
   }
   .banner__heading {
-    margin-right: 0; 
+    margin-right: 0;
   }
   .banner__content {
     flex-direction: column;
   }
   .banner__btn {
-    padding: 15px 36px;
+    width: 120%;
+    padding: 15px 0px;
     margin: 40px 0 0;
   }
   /* Best */
@@ -171,17 +223,66 @@
   }
   /* Tour */
   .tour {
-    margin-top: 520px;
     padding: 0 24px;
-    margin-bottom: 20px;
-  }
-  /* Discover */
-  .discover {
-    margin-bottom: 80px;
+    margin: 520px 0 20px;
   }
   /* Card */
   .card-item-info__btn {
     width: 100%;
+  }
+  /* News */
+  .news-item {
+    flex-direction: column;
+    height: 600px;
+    margin: 12px 24px;
+  }
+  .news-item___info-btn {
+    width: 100%;
+  }
+  /* Contact */
+  .contact {
+    padding: 50px 24px;
+  }
+  /* Map */
+  .form__btn {
+    width: 100%;
+  }
+  .map-info__phone {
+    font-size: 4rem;
+  }
+  /* Shop */
+  .shop-item {
+    margin: 12px 24px;
+  }
+  .shop-item__btn {
+    width: 100%;
+    text-align: center;
+  }
+  /* STAFF */
+  .staff {
+    /* doc = 100vw - 48*2*1.4*4 */
+    --width: calc(100vw - 48*2px);
+    --height: calc(var(--width)*1.9);
+    --total-height: calc(var(--height)*4);
+    margin-bottom: var(--total-height);
+  }
+  .staff-intro {
+    padding: 100px 24px 200px;
+  }
+  .staff-intro__btn {
+    width: 100%;
+  }
+  .staff-person-wrap {
+    left: 48px;
+    right: 48px;
+  }
+  /* Destination */
+  .destination {
+    padding: 60px 24px;
+  }
+  .destination-item {
+    padding: 0;
+    line-height: 4rem;
   }
   /* Footer */
   .footer {
@@ -197,9 +298,12 @@
   .footer__input {
     width: 70%;
   }
+  .footer__input:focus {
+    width: 80%;
+  }
   .footer__btn {
-    margin: 12px auto 0;
     width: 70%;
+    margin: 12px auto 0;
   }
   .footer-info {
     padding-right: 0;
