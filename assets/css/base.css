@@ -7,6 +7,7 @@
   --text-dark-color: #555;
 
   --red-color: #f76570;
+  --orange-dark-color: #e27557;
   --orange-color: #f3a46b;
   --yellow-color: #ffd205;
   --green-color: #1bbc9b;
@@ -66,6 +67,9 @@ html {
 .btn--bg-red {
   background-color: var(--red-color);
 }
+.btn--bg-dark-orange {
+  background-color: var(--orange-dark-color);
+}
 .btn--bg-orange {
   background-color: var(--orange-color);
 }
@@ -88,6 +92,9 @@ html {
 /* Background and color */
 .bg--red {
   background-color: var(--red-color);
+}
+.bg--dark-orange {
+  background-color: var(--orange-dark-color);
 }
 .bg--orange {
   background-color: var(--orange-color);
@@ -151,6 +158,9 @@ u.underline {
 }
 u.underline.underline--red::after {
   background-color: var(--red-color);
+}
+u.underline.underline--dark-orange::after {
+  background-color: var(--orange-dark-color);
 }
 u.underline.underline--orange::after {
   background-color: var(--orange-color);

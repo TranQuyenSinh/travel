@@ -42,6 +42,7 @@
   transform: translate(-50%, -50%);
   cursor: pointer;
   transition: 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 .hero__icon-play:hover {
   transform: translate(-50%, -50%) scale(1.05);
@@ -49,7 +50,6 @@
 
 /* STAFF */
 .staff {
-  margin-bottom: 450px;
   background: linear-gradient(#434a544d, #434a544d), url(../images/parallax-15.jpg) no-repeat center center / cover;
 }
 .staff-intro {
@@ -73,19 +73,18 @@
   padding: 15px 25px;
   margin-top: 30px;
   font-size: 1.6rem;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .staff-intro__btn:hover {
-  filter: brightness(0.9);
+  filter: brightness(1.1);
 }
 .staff-intro__btn:hover {
   transform: scale(1.05);
 }
 .staff-person-wrap {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: calc(100% - 100px);
+  position: relative;
+  top: -100px;
 }
 .staff-person {
   text-align: center;
@@ -119,6 +118,7 @@
   color: var(--text-light-color);
   font-size: 1.3rem;
   line-height: 1.3rem;
+  -webkit-tap-highlight-color: transparent;
 }
 .staff-person__btn:hover {
   background-color: var(--text-light-color);

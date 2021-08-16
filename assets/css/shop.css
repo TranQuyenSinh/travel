@@ -17,6 +17,7 @@
   display: block;
   margin-bottom: 24px;
   text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .shop-item__img {
   padding-top: 100%;

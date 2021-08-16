@@ -53,6 +53,7 @@
 .news-item___info-btn {
   padding: 12px 20px;
   transition: all 0.2s;
+  -webkit-tap-highlight-color: transparent;
 }
 .news-item___info-btn:hover {
   filter: brightness(0.9);

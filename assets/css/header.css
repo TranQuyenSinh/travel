@@ -5,7 +5,7 @@
   background-position: center bottom;
   background-size: cover;
   min-height: 800px;
-} 
+}
 .header-title {
   position: absolute;
   left: 12%;
@@ -28,6 +28,7 @@
 .header__logo {
   width: 160px;
   margin-right: 70px;
+  -webkit-tap-highlight-color: transparent;
 }
 .header__logo-img {
   width: 100%;
@@ -108,6 +109,7 @@
 }
 .header__menu-btn {
   margin-left: auto;
+  -webkit-tap-highlight-color: transparent;
 }
 .header__menu-icon {
   color: #acacae;
@@ -116,17 +118,17 @@
 }
 .header__menu-icon:hover {
   filter: brightness(1.05);
-} /* End subnav */ 
+} /* End subnav */
 
 /* Start aside */
-.aside-overlay{
+.aside-overlay {
   position: fixed;
   top: 0%;
   left: 0;
   right: 0%;
   bottom: 0%;
   z-index: 2;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   display: none;
   opacity: 0;
 }
@@ -157,6 +159,7 @@
   top: 15px;
   right: 15px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .aside__close-btn:hover {
   transform: scale(1.05);
@@ -229,7 +232,6 @@
 #switch-aside-checkbox:checked ~ .aside {
   transform: translateX(0);
   opacity: 1;
-
 }
 #switch-aside-checkbox:checked ~ .aside-overlay {
   display: block;
@@ -244,12 +246,21 @@
 .aside__navbar-item {
   margin-bottom: 30px;
 }
+.aside__navbar-icon {
+  font-size: 1.4rem;
+  color: var(--white-color);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -16px;
+}
 .aside__navbar-link {
   color: var(--white-color);
   font-size: 2.4rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  position: relative;
 }
 .aside__subnav {
   margin-left: 20px;
